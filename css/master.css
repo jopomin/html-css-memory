@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Nerko One', serif;
   text-align: center;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 
 body {
@@ -21,6 +20,7 @@ h1 {
   font-size: 64px;
   margin: 25px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .cards-container {
@@ -31,6 +31,7 @@ footer p {
   color: #000;
   font-size: 26px;
   margin: 40px 0 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .card-row {
@@ -40,14 +41,40 @@ footer p {
 }
 
 .card {
-  background: #fff;
-  background-image: url(../img/pattern.png);
-  background-size: 90%;
   width: 180px;
   height: 200px;
   border-radius: 15px;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.base {
   position: absolute;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.base img {
+  height: 75%;
+  margin: 0 auto;
+}
+
+.base h2 {
+  color: #ff9933;
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.overlay {
+  position: absolute;
+  background: #fff;
+  background-image: url(../img/pattern.png);
+  background-size: 90%;
+}
+
+.overlay:hover {
+  display: none;
 }
 
 .c-one {
@@ -64,4 +91,8 @@ footer p {
 
 .c-four {
   right: 0;
+}
+
+#start h2:hover {
+  color: #e61986;
 }
