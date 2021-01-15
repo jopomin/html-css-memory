@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nerko One', serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+body {
+  background: #add8e6;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  font-size: 64px;
+  margin: 25px;
+  text-transform: uppercase;
+}
+
+.cards-container {
+  background: #000;
+  opacity: 0.3;
+  height: 700px;
+  position: relative;
+}
+
+footer p {
+  color: #000;
+  font-size: 26px;
+  margin: 25px 0;
+}
