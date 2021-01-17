@@ -71,6 +71,7 @@ footer p {
   background: #fff;
   background-image: url(../img/pattern.png);
   background-size: 90%;
+  z-index: 1;
 }
 
 .overlay:hover {

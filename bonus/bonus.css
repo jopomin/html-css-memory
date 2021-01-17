@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background: #801015;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #f7931e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Sigmar One', sans-serif;
+  font-size: 52px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.cards-container {
+  height: 660px;
+}
+
+footer p {
+  color: #f7931e;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  margin: 50px 0 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffd15e;
+}
+
+a:active {
+  color: #ed1c24;
+}
+
+.card-row {
+  height: 200px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card {
+  width: 180px;
+  height: 200px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.base {
+  position: absolute;
+  background-image: url(../img/pattern-jungle.jpg);
+  padding: 15px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.img-cont {
+  border-radius: 15px;
+  background: #fff;
+  height: 170px;
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.img-cont img {
+  height: 65%;
+  margin: 0 auto;
+}
+
+.img-cont h3 {
+  color: #222;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.overlay {
+  position: absolute;
+  background-image: url(../img/pattern-jungle.jpg);
+  padding-top: 15px;
+}
+
+.bordo {
+  border-radius: 15px;
+  border: 3px solid #fff;
+  height: 170px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.overlay:hover {
+  display: none;
+}
+
+.c-one {
+  left: 0;
+}
+
+.c-two {
+  left: 200px;
+}
+
+.c-three {
+  right: 200px;
+}
+
+.c-four {
+  right: 0;
+}
+
+#start h2:hover {
+  color: #e61986;
+}
