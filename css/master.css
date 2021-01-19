@@ -25,6 +25,66 @@ h1 {
 
 .cards-container {
   height: 660px;
+  text-align: center;
+}
+
+.card-row {
+  margin-bottom: 30px;
+}
+
+.card {
+  display: inline-block;
+  width: 180px;
+  height: 200px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 15px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.card-row .card:last-child {
+  margin-right: 0;
+}
+
+.card {
+  background: #fff;
+  background-image: url('../img/pattern.png');
+  background-size: 75%;
+  padding: 10px;
+}
+
+.card img {
+    height: 75%;
+    margin: 0 auto;
+  }
+
+.card h2 {
+  color: #ff9933;
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.card img, .card h2 {
+  visibility: hidden;
+}
+
+#start,
+.card:hover {
+  background-image: none;
+}
+
+
+#start img,
+#start h2,
+.card:hover img,
+.card:hover h2
+{
+  visibility: visible;
+}
+
+#start:hover h2 {
+  color: #e61986;
 }
 
 footer p {
@@ -32,68 +92,4 @@ footer p {
   font-size: 26px;
   margin: 40px 0 20px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-.card-row {
-  height: 200px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.card {
-  width: 180px;
-  height: 200px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.base {
-  position: absolute;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-}
-
-.base img {
-  height: 75%;
-  margin: 0 auto;
-}
-
-.base h2 {
-  color: #ff9933;
-  font-size: 26px;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
-}
-
-.overlay {
-  position: absolute;
-  background: #fff;
-  background-image: url(../img/pattern.png);
-  background-size: 90%;
-  z-index: 1;
-}
-
-.overlay:hover {
-  display: none;
-}
-
-.c-one {
-  left: 0;
-}
-
-.c-two {
-  left: 200px;
-}
-
-.c-three {
-  right: 200px;
-}
-
-.c-four {
-  right: 0;
-}
-
-#start h2:hover {
-  color: #e61986;
 }
